@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulasi Kredit Mobil Chery - Maybank Finance</title>
+  <link rel="stylesheet" href="css/style4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">C</div>
+        <div>
+          <div class="title">Simulasi Kredit Mobil Chery</div>
+          <div style="color:var(--muted);font-size:.9rem">Cherindo Cibubur • Maybank Finance</div>
+        </div>
+      </div>
+      <nav aria-label="Main Navigation">
+        <a href="index.html">Back</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Pilih Unit</h2>
+      <label for="unit">Model Unit</label>
+      <select id="unit"></select>
+
+      <label for="dp">DP (Persentase)</label>
+      <input type="number" id="dp" placeholder="Contoh: 30 (untuk 30%)">
+
+      <button id="btnHitung">Hitung Simulasi</button>
+
+      <div class="result" id="result">Hasil perhitungan akan muncul di sini...</div>
+    </div>
+
+    <div class="card">
+      <h2>Tabel Rate Kredit Maybank</h2>
+      <table>
+        <tr><th>Tenor (Bulan)</th><th>Rate (%)</th></tr>
+        <tr><td>11</td><td>3.18</td></tr>
+        <tr><td>23</td><td>3.38</td></tr>
+        <tr><td>35</td><td>3.48</td></tr>
+        <tr><td>47</td><td>4.08</td></tr>
+        <tr><td>59</td><td>4.88</td></tr>
+      </table>
+    </div>
+  </main>
+
+  <!-- SLIDER SALES -->
+  <section id="kontak" class="slider-container">
+    <div class="slider" id="salesSlider">
+      <div class="slide sales-slide"><img src="images/sabar.jpg"><h3>Sabar</h3><p>"Kami bantu proses cepat, harga bersahabat, pelayanan ramah!"</p><a href="https://wa.me/6285718025881">Hubungi via WA</a></div>
+      <div class="slide sales-slide"><img src="images/yandri.jpg"><h3>Yandri</h3><p>"Butuh simulasi kredit? Saya bantu sampai deal!"</p><a href="https://wa.me/6281219990373">Hubungi via WA</a></div>
+      <div class="slide sales-slide"><img src="images/tia.jpg"><h3>Tia</h3><p>"Tanya harga? Promo? Saya siap bantu dengan cepat!"</p><a href="https://wa.me/6281233330849">Hubungi via WA</a></div>
+      </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <h4>Dealer Chery Cibubur</h4>
+      <p>Jl. Alternatif Cibubur No.KM. 6, Nagrak, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16967, Indonesia</p>
+      <p>Telp: 021-80478000</p>
+      <p>Email: info@dealercherycibubur.id</p>
+    </div>
+    <div>
+      <h4>Layanan</h4>
+      <a href="webjadi.html">Booking Test Drive</a>
+      <a href="#">Simulasi Kredit</a>
+      <a href="aftersales 2.html">Layanan Purna Jual</a>
+    </div>
+    <div>
+      <h4>Ikuti Kami</h4>
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script4.js"></script>
+</body>
+</html>
