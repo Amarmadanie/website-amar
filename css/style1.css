@@ -234,7 +234,7 @@ footer a:hover {
 /* Slider Buttons */
 .prev, .next {
   position: absolute;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   background: rgba(0,0,0,0.5);
   color: white;
