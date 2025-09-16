@@ -272,3 +272,35 @@ document.querySelectorAll('#salesSlider a').forEach(function(el) {
   });
 });
 
+// Tracking klik WA di slider sales
+document.querySelectorAll('#salesSlider a').forEach(function(el) {
+  el.addEventListener('click', function() {
+    const transactionId = "WA-" + Date.now();
+
+    if (typeof gtag !== "undefined") {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17552436630/PHs-CJOSk5kbEJbb07FB',
+        'transaction_id': transactionId
+      });
+      console.log("Konversi WA terkirim dengan ID:", transactionId);
+    }
+  });
+});
+
+// Tracking tombol Checkout (jika ada)
+const checkoutBtn = document.getElementById("btnCheckout");
+if (checkoutBtn) {
+  checkoutBtn.addEventListener("click", function() {
+    const transactionId = "CHECKOUT-" + Date.now();
+
+    if (typeof gtag !== "undefined") {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17552436630/PHs-CJOSk5kbEJbb07FB',
+        'transaction_id': transactionId
+      });
+      console.log("Konversi Checkout terkirim dengan ID:", transactionId);
+    }
+  });
+}
+
+
