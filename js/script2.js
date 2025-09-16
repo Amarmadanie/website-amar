@@ -244,15 +244,18 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
-// contoh: ketika tombol dengan id="btnCheckout" diklik
 document.getElementById("btnCheckout").addEventListener("click", function() {
+  const transactionId = "CHECKOUT-" + Date.now(); // bikin ID unik per transaksi
+
   if (typeof gtag !== "undefined") {
     gtag('event', 'conversion', {
-      'send_to': 'AW-17552436630/PHs-CJOSk5kbEJbb07FB'
+      'send_to': 'AW-17552436630/PHs-CJOSk5kbEJbb07FB',
+      'transaction_id': transactionId
     });
-    console.log("Google Ads Conversion terkirim!");
+    console.log("Google Ads Conversion terkirim dengan ID:", transactionId);
   }
 });
+
 
 // Ambil semua tombol WhatsApp di slider sales
 document.querySelectorAll('#salesSlider a').forEach(function(el) {
