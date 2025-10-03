@@ -118,7 +118,7 @@
             </div>
             <div class="actions">
               <a class="btn-sm primary" target="_blank" href="${p.brochure}">Download Brosur</a>
-              <a class="btn-sm" href="https://wa.me/6285128041948" target="_blank">Test Drive</a>
+              <a class="btn-sm" href="https://wa.me/" target="_blank">Test Drive</a>
             </div>
           </div>
 
